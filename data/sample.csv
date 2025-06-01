@@ -1,0 +1,6 @@
+equipment_id,temperature,vibration,rpm,wear,status
+EQ-101,298,1.2,1380,45,Normal
+EQ-102,315,3.4,1870,132,Warning
+EQ-103,345,5.7,2230,215,Critical
+EQ-104,302,2.1,1560,87,Normal
+EQ-105,287,4.3,1980,178,Warning

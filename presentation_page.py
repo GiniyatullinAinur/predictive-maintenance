@@ -10,7 +10,7 @@ def show_presentation_page():
         <h1 style="color:white;margin:0">📊 Project Presentation</h1>
     </div>
     """, unsafe_allow_html=True)
-    
+
     # Карточки с информацией
     cols = st.columns(2)
     with cols[0]:
@@ -21,7 +21,7 @@ def show_presentation_page():
             - Reduce maintenance costs by 20-30%
             - Improve equipment lifespan
             """)
-    
+
     with cols[1]:
         with st.container(border=True):
             st.markdown("### ⚙️ Technologies Used")
@@ -31,10 +31,10 @@ def show_presentation_page():
             - Plotly
             - XGBoost
             """)
-    
+
     # Горизонтальный разделитель
     st.divider()
-    
+
     # Временная шкала проекта
     st.markdown("### 📅 Project Timeline")
     with st.expander("View Development Stages"):
