@@ -1,36 +1,46 @@
 import streamlit as st
 
-
 def show_presentation_page():
-    st.title("🎓 Predictive Maintenance Project")
-
+    # Кастомный заголовок
     st.markdown("""
-    ## Project Overview
-    **Goal:** Develop ML model for equipment failure prediction
-
-    ### Key Steps:
-    1. Data collection from [UCI Repository](https://archive.ics.uci.edu/dataset/601/predictive+maintenance+dataset)
-    2. Data preprocessing and feature engineering
-    3. Model training (Random Forest, XGBoost, SVM)
-    4. Streamlit application development
-
-    ### Technical Stack:
-    - Python 3.10
-    - Scikit-learn
-    - Streamlit
-    - Pandas/Matplotlib
-
-    ## Results
-    - Best model: **Random Forest** (95% accuracy)
-    - Key failure indicators:
-        - High tool wear (>200 min)
-        - Low temperature difference (<8.6K)
-
-    ## Next Steps
-    1. Hyperparameter tuning
-    2. Real-time monitoring integration
-    3. Anomaly detection implementation
-    """)
-
-    st.image("https://miro.medium.com/v2/resize:fit:1200/1*Qc0D7vV4Y6f5hcaE0b0E4g.png",
-             caption="Predictive Maintenance Workflow")
+    <div style="background:linear-gradient(90deg, #1e2130, #0e1117);
+                padding:20px;
+                border-radius:10px;
+                margin-bottom:30px">
+        <h1 style="color:white;margin:0">📊 Project Presentation</h1>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Карточки с информацией
+    cols = st.columns(2)
+    with cols[0]:
+        with st.container(border=True):
+            st.markdown("### 🎯 Project Goals")
+            st.markdown("""
+            - Predict equipment failures before they occur
+            - Reduce maintenance costs by 20-30%
+            - Improve equipment lifespan
+            """)
+    
+    with cols[1]:
+        with st.container(border=True):
+            st.markdown("### ⚙️ Technologies Used")
+            st.markdown("""
+            - Python 3.10
+            - Streamlit
+            - Plotly
+            - XGBoost
+            """)
+    
+    # Горизонтальный разделитель
+    st.divider()
+    
+    # Временная шкала проекта
+    st.markdown("### 📅 Project Timeline")
+    with st.expander("View Development Stages"):
+        st.markdown("""
+        1. **Data Collection** (2 weeks)
+        2. **Model Development** (3 weeks)
+        3. **UI Design** (1 week)
+        4. **Testing** (2 weeks)
+        """)

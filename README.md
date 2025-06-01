@@ -1,13 +1,15 @@
-# Predictive Maintenance Project
+# Smart Equipment Monitor
 
-## Project Overview
-ML model for equipment failure prediction using sensor data. Streamlit application with:
-- Data analysis
-- Model training interface
-- Failure prediction
+Modern predictive maintenance system with interactive dashboard.
+
+## Features
+- 3D equipment visualization
+- Real-time risk prediction
+- Beautiful dark theme UI
 
 ## Installation
 ```bash
-git clone https://github.com/GiniyatullinAinur/predictive-maintenance.git
-cd predictive-maintenance
+git clone https://github.com/yourrepo/smart-equipment-monitor.git
+cd smart-equipment-monitor
 pip install -r requirements.txt
+streamlit run app.py

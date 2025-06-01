@@ -1,0 +1,45 @@
+/* Основные переменные */
+:root {
+    --primary: #5e72e4;
+    --secondary: #825ee4;
+    --dark-bg: #0e1117;
+    --card-bg: #1e2130;
+    --text-light: #f8f9fa;
+    --text-muted: #adb5bd;
+}
+
+/* Общие стили */
+.stApp {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+/* Карточки метрик */
+.metric-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 4px solid var(--primary);
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Кнопки */
+.stButton>button {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(94, 114, 228, 0.3);
+}
