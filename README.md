@@ -9,6 +9,6 @@ Modern predictive maintenance system with interactive dashboard.
 
 ## Installation
 ```bash
-git clone https://github.com/yourrepo/smart-equipment-monitor.git
-cd smart-equipment-monitor
+git clone [[https://github.com/GiniyatullinAinur/predictive-maintenance.git]]
+cd predictive-maintenance
 pip install -r requirements.txt
